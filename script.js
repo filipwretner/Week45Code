@@ -159,3 +159,27 @@
 // const liElements = document.querySelectorAll("li.item");
 
 // liElements.forEach(item => {item.style.backgroundColor = "#f2f2f2";});
+
+// Övning 11: Jämföra textContent, innerText och innerHTML
+
+// const divContainer = document.getElementById("textContainer");
+
+// console.log(`textContent: ${divContainer.textContent}`); // Får ut all text
+// console.log(`textContent: ${divContainer.innerText}`); // Får ut all synlig text
+// console.log(`textContent: ${divContainer.innerHTML}`); // Får ut all HTML kod
+
+// // Övning 12: Ändra Attribut på Element
+
+// const lin = document.getElementById("minLänk");
+
+// lin.setAttribute("href", "https://www.google.com"); // Väljer först vilket attribut, sen vad den ska "säga"
+// lin.setAttribute("title", "Besök Google");
+// lin.textContent = "Sök på Google";
+
+// // Övning 13: Använda CSS-klasser för Styling
+
+// const fullList = document.querySelectorAll("li.item");
+
+// fullList[1].classList.add("dold");
+
+// fullList[0].classList.add("framträdande");

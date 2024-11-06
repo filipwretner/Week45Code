@@ -217,15 +217,15 @@
 // Uppgift:
 // Lägg till följande CSS-stilar i din <head>:
 
-// <style>
-//   .dold {
-//     display: none;
-//   }
-//   .framträdande {
-//     color: red;
-//     font-weight: bold;
-//   }
-// </style>
+<style>
+  .dold {
+    display: none;
+  }
+  .framträdande {
+    color: red;
+    font-weight: bold;
+  }
+</style>
 
 // Använd JavaScript för att:
 

@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Selektorer Övning</title>
+  <style>
+    .dold {
+      display: none;
+    }
+    .framträdande {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <h1 id="rubrik">Min Webbsida</h1>
@@ -16,6 +25,15 @@
     <li class="item highlight">Item 2</li>
     <li class="item">Item 3</li>
   </ul>
+
+  <div id="textContainer">
+    <p>Detta är en <strong>viktig</strong> text.</p>
+    <!-- En dold paragraf -->
+    <p style="display: none;">Denna text är dold.</p>
+  </div>
+
+  <a id="minLänk" href="https://www.example.com" title="Besök Example.com">Besök vår sida</a>
+
   <script src="script.js"></script>
 </body>
 </html>
