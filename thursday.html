@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Skapa och Ta Bort Element Övningar</title>
+  </head>
+  <body>
+
+    <div id="innehåll">
+      <h1>Välkommen till min sida</h1>
+    </div>
+
+    <button id="läggTillKnapp">Lägg till paragraf</button>
+    <button id="taBortKnapp">Ta bort paragraf</button>
+
+    <h2>Dynamisk Tabellbyggare</h2>
+
+    <form id="tabellFormulär">
+      <input type="text" id="tabellRubrik" placeholder="Tabellrubrik" required>
+      <input type="number" id="antalRader" placeholder="Antal rader" min="1" required>
+      <input type="number" id="antalKolumner" placeholder="Antal kolumner" min="1" required>
+      <button type="button" id="läggTillTabellKnapp">Skapa Tabell</button>
+    </form>
+    
+    <div id="tabellContainer"></div>
+
+    <script src="thursday.js"></script>
+  </body>
+
+</html>

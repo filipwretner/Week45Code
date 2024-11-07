@@ -11,6 +11,7 @@ class task {
 
 }
 
+// Hämtar element och tilldelar dem variabler
 const taskForm = document.getElementById("taskForm");
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList"); 
@@ -56,27 +57,28 @@ function showToDo() {
 
     toDoList.forEach(task => { // För varje uppgift i arrayen lägger vi till HTML element
 
-        const showTask = document.createElement("li"); //Lägger till ett list element
-        showTask.className = task.isCompleted ? "completed" : "";
-        showTask.dataset.id = task.taskID; 
+        const showTask = document.createElement("li"); // Skapar list element
+        showTask.className = task.isCompleted ? "completed" : ""; // Sätter dit en klass beroende på om uppgiften är klar eller inte
+        showTask.dataset.id = task.taskID; // Sätter ID för varje item som id i HTML
 
-        const showDescription = document.createElement("span"); // Lägger till beskrivningen som text
+        const showDescription = document.createElement("p"); // Skapar p med beskrivning som text
         showDescription.textContent = task.taskDescription;
 
-        const completeTask = document.createElement("button"); // Lägger till en knapp för att markera som klar
+        const completeTask = document.createElement("button"); // Skapar en knapp för att markera uppgiften som klar
         completeTask.className = "completeButton";
         completeTask.textContent = "Markera uppgift som klar";
-        completeTask.addEventListener("click", () => markAsCompleteToDo(task.taskID));
+        completeTask.addEventListener("click", () => markAsCompleteToDo(task.taskID)); // Skickar med ID på den uppgiften man trycker på
 
-        const deleteTask = document.createElement("button"); // Lägger till en knapp för att ta bort uppgift
+        const deleteTask = document.createElement("button"); // Skapar en knapp för att ta bort uppgiften
         deleteTask.className = "deleteButton";
         deleteTask.textContent = "Ta bort uppgift";
-        deleteTask.addEventListener("click", () => deleteToDo(task.taskID));
+        deleteTask.addEventListener("click", () => deleteToDo(task.taskID)); // Skickar med ID på den uppgiften man trycker på
 
-        // Lägger till alla i rätt ordning
+        // Lägger till alla element i rätt ordning under li elementet
         showTask.appendChild(showDescription);
         showTask.appendChild(completeTask);
         showTask.appendChild(deleteTask);
+        // Lägger till li elementet i ul
         taskList.appendChild(showTask); 
     });
 }
