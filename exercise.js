@@ -84,10 +84,10 @@ const image = document.getElementById("minBild");
 
 image.addEventListener("mouseover", () => {
     image.src = "bild2.jpg";
-    image.alt = "bild 2";
+    image.alt = "Bild 2";
 });
 
 image.addEventListener("mouseout", () => {
     image.src = "bild1.jpg";
-    image.alt = "bild 1";
+    image.alt = "Bild 1";
 });
