@@ -30,6 +30,7 @@ form {
 
 form p {
     grid-column: 1 / span 2;
+    font-size: 20px;
 }
 
 form input {
@@ -56,12 +57,14 @@ li {
     padding: 1rem;
 }
 
-li span {
+li p {
     margin: 1rem;
+    padding: 1rem;
+    font-size: 20px;
 }
 
-li.completed {
-    border: 1px solid aquamarine;
+li.completed p {
+    border: 1px solid green;
 }
 
 li button {
