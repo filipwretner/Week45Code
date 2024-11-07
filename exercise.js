@@ -54,11 +54,14 @@ const message = document.getElementById("meddelande");
 
 myForm.addEventListener("submit", (event) => {
     event.preventDefault();
+
     if (textArea.value === "") { 
         message.textContent = "Textfältet får inte vara tomt";
+        console.log(textArea);
     } else {
         message.textContent = "Formuläret skickades";
     }
+
 });
 
 
